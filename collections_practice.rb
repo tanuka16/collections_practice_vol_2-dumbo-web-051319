@@ -33,6 +33,6 @@ def find_cool(array)
   array.select { |item| item[:temperature] == 'cool'}
 end
 
-def method_name
+def organize_schools
 
 end
