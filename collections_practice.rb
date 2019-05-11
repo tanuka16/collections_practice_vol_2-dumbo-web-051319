@@ -29,6 +29,10 @@ def merge_data(keys, data)
   end
 end
 
-def find_cool(cool)
-  cool.select {|item| item[:temperature] == cool}
+def find_cool(array)
+  array.select {|item| item[:temperature] == cool}
+end
+
+def method_name
+
 end
