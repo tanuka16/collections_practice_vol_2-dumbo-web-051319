@@ -3,6 +3,7 @@ def begins_with_r(element)
   element.all? {|item| item.start_with?("r")}           #The all? method returns true if the block never returns false or nil
                                                         #for any element passed to it
 end
+
 def contain_a(element)
   element.select{|item| item.include?('a')}
 end
