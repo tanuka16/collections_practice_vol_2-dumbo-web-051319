@@ -25,6 +25,6 @@ end
 
 def merge_data(keys, data)
 
-
+  keys.mergedo(data[0]key[:first_name]).to_h
 
 end
