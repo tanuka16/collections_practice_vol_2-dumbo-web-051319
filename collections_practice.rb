@@ -18,7 +18,7 @@ end
 
 def count_elements(element)
 #The uniq method returns a new array by removing duplicate values in self. If no duplicates are found, the same array value is returned.
-  element.uniq.collect do |item|                      
+  element.uniq.collect do |item|                      # Array#collect is same as Array#map and it applies the given block of code on all the items and returns the new array.
     item[:count] = element.count(item)
     item
   end
@@ -35,5 +35,14 @@ def find_cool(array)
 end
 
 def organize_schools(schools)
+  schools_by_location = {}
+  schools.each do |key, value|
+    if (schools_by_location[value[:location]] == nil)
+      schools_by_location[value[:location]] == key
+    else
+      schools_by_location[value[:location]] << key
+    end
+
+  end
 
 end
