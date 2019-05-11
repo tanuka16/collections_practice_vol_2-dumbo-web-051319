@@ -17,7 +17,8 @@ def remove_non_strings(element)
 end
 
 def count_elements(element)
-  element.uniq.collect do |item|
+#The uniq method returns a new array by removing duplicate values in self. If no duplicates are found, the same array value is returned.
+  element.uniq.collect do |item|                      
     item[:count] = element.count(item)
     item
   end
