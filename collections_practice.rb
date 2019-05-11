@@ -27,5 +27,8 @@ def merge_data(keys, data)
   keys.map do |key|
     key.merge(data[0][key[:first_name]].to_h)
   end
+end
+
+def find_cool(cool)
 
 end
