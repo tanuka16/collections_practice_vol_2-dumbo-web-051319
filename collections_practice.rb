@@ -24,7 +24,7 @@ def count_elements(element)
 end
 
 def merge_data(keys, data)
-  keys.map do |keys|
+  keys.map do |key|
     keys.merge (data[0][key[:first_name]].to_h)
   end
 
